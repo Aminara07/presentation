@@ -1,0 +1,525 @@
+
+
+/*General start*/
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    background-color: #00152A;
+    font-family: 'Poppins', sans-serif;}
+/*General end*/
+  
+/*nav bar  start*/
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+.book_logo_2{
+  width: 50px;
+  margin-bottom: -20px;
+}
+
+.nav {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.about{
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+  margin-right: 10px;
+ }
+
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/*nav bar end*/
+
+/*Introduction start*/
+.intro_img{
+  width: 500px;
+  margin-left: 60%;
+  margin-top: 200px;
+}
+.paragraph_1{
+  margin-top: -310px;
+  font-size: 25px;
+}
+.collide{
+  margin-left: 220px;
+  margin-top: 30px;
+}
+
+
+
+ @media  (max-width:600px) {
+  .paragraph_1{
+   margin-left: -50px;
+   font-size: 17px;
+   margin-top: 100px;
+  }
+  .intro_img{
+   margin-left: 10px;
+   width: 300px;
+   margin-top: 100px;
+  }
+  .collide{
+   margin-left:220px;
+  }
+ }
+ @media (max-width:1200px) {
+  .paragraph_1{
+   margin-left: 90px;
+   margin-top: 90px;
+   
+  }
+  .intro_img{
+   margin-left: 90px;
+   width: 400px;
+   margin-top: 90px;
+   
+  }
+  .collide{
+   margin-left: 5px;
+  }
+ }
+
+/*Introduction end*/
+ 
+/*main start*/
+@media  (max-width:1300px) {
+  #priory{
+    margin-left: -150px;
+    margin-top: 40px;
+  }
+  .yolo{
+    margin-left: 60px;
+    margin-top: -60px;
+  }
+  #hi{
+    margin-left: 60px;
+    }
+    #romance{
+      margin-left: 150px;
+    }
+    #po_1{
+      margin-left: -150px;
+      margin-top: 5px;
+      width: 600px;
+    }
+    #sadiya{
+      margin-top: -20px;
+    }
+    #hs{
+      margin-left: 157px;
+    }
+  
+  #love{
+    margin-left: -153px;
+    margin-top: 40px;
+  }
+  #like{
+    margin-left: 100px;
+    margin-top: -10px;
+  }
+  .zu{
+    margin-top: 40px;
+    margin-left: -120px;
+  }
+  .what{
+    margin-left: -470px;
+  }
+  #lol{
+    margin-left: 70px;
+  }
+  .win{
+    margin-left: -55px;
+  }
+}
+ 
+main{
+  margin-top: 400px;
+}
+#po{
+  margin-left: 250px;
+}
+.po_1{
+  margin-left: 250px;
+  margin-top: 40px;
+}
+
+#select{
+  background-color: #2A4E75;
+  color: white;
+  height: 50px;
+  border-radius: 0px;
+  width: 220px;
+  font-size: 15px;
+  border: hidden;
+  padding-left: 8px;
+  border-radius: 40px;
+  margin-top: 400px;
+  margin-left: 1020px;
+}
+option{
+  background: transparent;
+}
+.thumbnail { 
+  top:-50px; 
+  left:-35px; 
+  width: 270px;
+  display:block; 
+  z-index:999; 
+  cursor: pointer; 
+  -webkit-transition-property: all; 
+  -webkit-transition-duration: 0.3s; 
+  -webkit-transition-timing-function: ease; 
+  } 
+  
+  .thumbnail:hover { 
+  transform: scale(1.2); 
+  
+  }
+  button{
+    background: transparent;
+    border: none;
+  }
+  #priory{
+    height: 400px;
+    padding-left: 250px;
+  }
+  #priory_2{
+    height: 400px;
+    margin-left: 1110px;
+    margin-top: -424px;
+  }
+  #match{
+    margin-left: 40px;
+  }
+  
+  #did{
+    margin-top: 100px;
+    margin-left: 620px;
+  }
+  .didou{
+    margin-left: 40px;
+  }
+  .fantasy_2{
+    margin-top: 100px;
+  }
+  .glass{
+    margin-left: 10px;
+  }
+  
+  .fantasy{
+    color: #C1C7C7;
+    margin-left: 640px;
+  }
+  .snitch{
+    width: 100px;
+    margin-bottom: -50px;
+  }
+  .books_1{
+    margin-top: 100px;
+  }
+  #priory{
+    height: 420px;
+    padding-left: 250px;
+  }
+  .fantasy_2{
+    color: #D9A597;
+    margin-left: 640px;
+    margin-top: px;
+  }
+  .fantasy_3{
+    color:#C1C7C7 ;
+    margin-left: 620px;
+    margin-top: px;
+  }
+  #awa{
+    margin-left: 230px;
+  }
+  .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/*main end*/
+
+/*Footer start*/
+
+ img {
+    max-width: 100%;
+    height: auto;
+}
+        section {
+            padding: 60px 0;
+           /* min-height: 100vh;*/
+        }
+ ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.contact-content h6 {
+    color: #8b9199;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+}
+
+.contact-content img {
+    max-width: 210px;
+}
+
+section, footer {
+    background-color: #001328;
+    color: #868c96;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+}
+.end{
+ margin-left: 10px;
+ margin-top: 50px;
+}
+
+
+/*Footer end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Welcome screen start*/
+  .welcome {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: #001328;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 2px;
+    color: #FFF; }
+  
+  .heading {
+    font-size: 50px;
+    margin-bottom: 20px;
+    opacity: 0; }
+  
+  .sub-heading {
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    opacity: 0; }
+  
+  .loader-wrapper {
+    height: 2px;
+    width: 150px;
+    background: #ededed;
+    border-radius: 100px;
+    opacity: 0; }
+  
+  .loader {
+    height: 2px;
+    width: 150px;
+    background: #FFF;
+    border-radius: 100px;
+    background: #585858; }
+  
+  p {
+    max-width: 500px;
+    font-family: "Avenir";
+    line-height: 25px;
+    text-align: justify;
+    opacity: 0;
+    color: #585858; 
+    margin-left: 300px;}
+
+.oo{
+    color: #D9A597;
+}
+.oo_2{
+    color: #C1C7C7;
+}
+
+.book_logo{
+    width: 180px;
+    margin-bottom: -20px;
+}
+/*Welcome screen end*/

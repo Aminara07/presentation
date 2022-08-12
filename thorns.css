@@ -1,0 +1,22 @@
+*{
+    background-color: #001328;
+}
+.book{
+    width: 180px;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+.description{
+    color: white;
+    width: 450px;
+    font-size: 14px;
+    margin-left: 90px;
+    line-height: 20px;
+}
+.big_img{
+    margin-left: 110%;
+    width: 900px;
+    margin-top: -620px;
+    height: 800px;
+    
+}
